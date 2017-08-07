@@ -1,0 +1,12 @@
+{
+  "name": "home-budget",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pszklanko/home-budget.git",
+  "author": "pszklanko <pszklanko@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "vue": "^2.4.2"
+  }
+}
