@@ -15,16 +15,21 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/vue-router/dist/vue-router.js"></script>
 </head>
 
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="app">
-        {{ message }}
-        <todo-item :todo="message"></todo-item>
+    <div id="app">
         <!-- v-bind:todo === :todo -->
+        <todo-item :todo="message"></todo-item>
+        <p>
+            <router-link to="/home">HOME</router-link>
+            <router-link to="/needs">NEEDS</router-link>
+        </p>
+        <router-view></router-view>
     </div>
 
     <script src="app.js"></script>
