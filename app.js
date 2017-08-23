@@ -1,9 +1,15 @@
-const home = { template: '<div>HOME</div>' }
+/*jshint esversion: 6 */
+
+const home = { template: '<div>HOME {{ $route.params }}</div>' }
 const needs = { template: '<div>NEEDS</div>' }
+const budget = { template: '<div>BUDGET</div>' }
+const about = { template: '<div>ABOUT</div>' }
 
 const routes = [
     { path: '/home', component: home },
-    { path: '/needs', component: needs }
+    { path: '/needs', component: needs },
+    { path: '/budget', component: budget },
+    { path: '/about', component: about }
 ]
 
 const router = new VueRouter({
