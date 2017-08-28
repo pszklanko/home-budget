@@ -1,5 +1,14 @@
 /*jshint esversion: 6 */
 
+import './styles.css';
+
+import 'bootstrap';
+
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+
+Vue.use(VueRouter)
+
 const home = { template: '<div>HOME {{ $route.params }}</div>' }
 const needs = { template: '<div>NEEDS</div>' }
 const budget = { template: '<div>BUDGET</div>' }

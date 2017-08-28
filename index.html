@@ -13,12 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="node_modules/vue/dist/vue.js"></script>
-    <script src="node_modules/vue-router/dist/vue-router.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 
 <body>
@@ -29,35 +24,39 @@
         <!-- v-bind:todo === :todo -->
         <!-- <todo-item :todo="message"></todo-item> -->
         <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-             <button type="button"
-                     class="navbar-toggle collapsed"
-                     data-toggle="collapse"
-                     data-target="#home-budget-navbar"
-                     aria-expanded="false">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#home-budget-navbar" aria-expanded="false">
                <span class="sr-only">Toggle navigation</span>
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Brand</a>
-           </div>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
 
-            <div class="collapse navbar-collapse" id="home-budget-navbar">
-              <ul class="nav navbar-nav">
-                <li><router-link to="/home">HOME</router-link></li>
-                <li><router-link to="/needs">NEEDS</router-link></li>
-                <li><router-link to="/budget">BUDGET</router-link></li>
-                <li><router-link to="/about">ABOUT</router-link></li>
-              </ul>
+                <div class="collapse navbar-collapse" id="home-budget-navbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <router-link to="/home">HOME</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/needs">NEEDS</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/budget">BUDGET</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/about">ABOUT</router-link>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </nav>
         <router-view></router-view>
     </div>
 
-    <script src="app.js"></script>
+    <script src="dist/build.js"></script>
 </body>
 
 </html>
