@@ -20,13 +20,17 @@ module.exports = {
                 use: [
                     'file-loader'
                 ]
+            },
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
             }
-        ],
-        loaders: [{
-            test: /\.js$/,
-            loader: 'babel',
-            exclude: /node_modules/
-        }]
+        ]
     },
     plugins: [
         new webpack.ProvidePlugin({
